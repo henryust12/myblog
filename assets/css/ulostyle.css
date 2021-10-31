@@ -8,6 +8,10 @@
  *                                          *
  ********************************************/
 /* Reset css */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&display=swap");
 *,
 ::before,
 ::after {
@@ -290,7 +294,7 @@ body {
   width: 75%;
   margin: 0 auto;
   padding: 2em 4em;
-  background-color: #A0DAA9;
+  background-color: #9BB7D4;
   color: #090910;
 }
 .kanvas p,
@@ -300,6 +304,12 @@ body {
 .kanvas h4,
 .kanvas h5 {
   margin-bottom: 1em;
+}
+.kanvas h1 {
+  font-family: "Secular One", sans-serif;
+}
+.kanvas p {
+  font-family: "Ubuntu", sans-serif;
 }
 
 .gambar img {
@@ -321,9 +331,15 @@ body {
   width: 100%;
   height: auto;
 }
+.kepala h1 {
+  font-family: "Fruktur", cursive;
+}
+.kepala p {
+  font-family: "Zen Kurenaido", sans-serif;
+}
 
 .navigasi {
-  background-color: #9BB7D4;
+  background-color: #0072B5;
   margin-bottom: 0%;
   margin: 0 auto;
   color: #090910;
@@ -358,8 +374,8 @@ body {
   font-weight: 600;
 }
 .tombol:hover {
-  background-color: #9BB7D4;
-  color: #090910;
+  background-color: #1B7340;
+  color: #FEE440;
   width: 6.4rem;
 }
 
