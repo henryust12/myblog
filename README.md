@@ -7,4 +7,4 @@
 
 
 
-A repository for my **Design** blog
+A repository for my blog **Design**
