@@ -1,0 +1,15 @@
+<Files shimatech/portfolio/index.html>
+ order allow,deny
+ Deny from all
+</Files>
+
+
+#DirectoryIndex portfolio/index.html
+
+
+
+
+
+
+
+
