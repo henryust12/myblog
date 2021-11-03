@@ -285,138 +285,160 @@ p {
   padding-top: 2rem;
 }
 
-body {
-  background-image: url("../img/pattern.jpg");
-  background-repeat: repeat;
+* {
+  box-sizing: border-box;
 }
 
-.kanvas {
-  width: 75%;
-  background-color: #9BB7D4;
-  color: #090910;
+.merah {
+  color: #e92424;
 }
-.kanvas p,
-.kanvas h1,
-.kanvas h2,
-.kanvas h3,
-.kanvas h4,
-.kanvas h5 {
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #141516;
+  color: #f0ece4;
+}
+
+article img {
+  width: 100%;
+}
+
+.card-detail {
+  margin: 1em 1em;
+  border-bottom: 2px solid #c5ac80;
+}
+.card-detail ul li a {
+  color: #f0ece4;
+}
+.card-detail h3, .card-detail h2 {
+  color: #F19828;
+}
+
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #272626;
+  font-family: "Fruktur", cursive;
+  text-shadow: 1px 1px 2px #E9897E, 0 0 1em #0072B5, 0 0 0.2em #0072B5;
   margin-bottom: 1em;
 }
-.kanvas a {
-  text-decoration: none;
-}
-.kanvas .tanggal {
-  text-align: right;
-  color: #B55A30;
-}
-.kanvas h1 {
+.header h2 {
   font-family: "Secular One", sans-serif;
-  color: #212529;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  color: #f0ece4;
 }
-.kanvas p {
+.header p {
   font-family: "Ubuntu", sans-serif;
 }
-.kanvas .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: auto;
-  grid-gap: 1rem;
-}
-.kanvas .cards .card {
-  border: 2px solid #e7e7e7;
-  border-radius: 4px;
-  padding: 0.5rem;
-}
-.kanvas .cards .card img {
-  width: 100%;
-}
 
-.selengkapnya a {
-  color: #0072B5;
-  font-weight: 700;
-}
-
-.gambar img {
-  max-width: 100%;
-  height: auto;
-}
-
-.kepala {
-  border-bottom: 1em solid #343a40;
-  background-color: #343a40;
-  color: #0072B5;
-  width: 100%;
-  height: 50%;
-  margin: 0 auto;
-  padding-bottom: 0;
-  text-align: center;
-  font-size: 1.5rem;
-}
-.kepala img {
-  width: 100%;
-  height: auto;
-}
-.kepala h1 {
-  font-family: "Fruktur", cursive;
-  text-shadow: 1px 1px 2px #E9897E, 0 0 1em #0072B5, 0 0 0.2em blue;
-}
-.kepala p {
-  font-family: "Zen Kurenaido", sans-serif;
-  color: #E9897E;
-}
-
-.menu {
-  background-color: #343a40;
-}
-.menu .navigasi {
+.leftcolumn {
+  float: left;
   width: 75%;
-  margin: 0 auto;
-  padding: 2em 4em;
-  margin-bottom: 0%;
-  margin: 0 auto;
-  color: #090910;
-  padding: 0.5rem;
-  text-align: right;
 }
-.menu .navigasi ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.menu .navigasi ul li {
-  display: inline;
-  margin: 3px;
+.leftcolumn h1 {
+  color: #0072B5;
 }
 
-.kaki {
-  background-color: #343a40;
-  color: #FDFCE5;
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
   text-align: center;
-  padding: 1px 0;
-}
-.kaki p {
-  margin: 1rem 0;
-  padding-top: 1px;
+  background: #272626;
+  color: #f1faee;
+  margin-top: 20px;
 }
 
-.tombol {
-  background-color: #0072B5;
-  color: #090910;
-  width: 5rem;
-  font-weight: 600;
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
-.tombol:hover {
-  background-color: #E9897E;
-  color: #090910;
-  width: 5.2rem;
+#home {
+  box-sizing: border-box;
 }
-.tombol:active {
-  background-color: #FEE440;
+
+.column {
+  float: left;
+  width: 33.3333333333%;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0 -5px;
+  margin-bottom: 3rem;
+}
+.row a {
+  text-decoration: none;
+  color: #090910;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    margin-bottom: 0;
+  }
+
+  .kanvas {
+    width: 100%;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #c5ac80;
+  color: #f0ece4;
+}
+.card h3 {
+  color: #272626;
+}
+.card .thumbnail {
+  margin-bottom: 1rem;
+}
+.card .thumbnail img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 #f0ece4;
+}
+
+.topik {
+  color: #1B7340;
+  font-weight: bold;
+}
+
+.tanggal {
+  color: #926AA6;
+  font-weight: bold;
+}
+
+.tanggal {
+  text-align: right;
 }
 
 /*# sourceMappingURL=ulostyle.css.map */
